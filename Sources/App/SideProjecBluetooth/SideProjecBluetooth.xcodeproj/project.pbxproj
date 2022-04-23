@@ -18,6 +18,7 @@
 		843FF8D92814541C00B7C5AD /* SideProjecBluetoothUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843FF8D82814541C00B7C5AD /* SideProjecBluetoothUITestsLaunchTests.swift */; };
 		843FF8E7281455A100B7C5AD /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843FF8E6281455A100B7C5AD /* HomeViewModel.swift */; };
 		843FF8EA281456EB00B7C5AD /* BluetoothAppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843FF8E9281456EB00B7C5AD /* BluetoothAppDependencies.swift */; };
+		843FF8EE28145FE800B7C5AD /* DeviceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843FF8ED28145FE800B7C5AD /* DeviceCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		843FF8D82814541C00B7C5AD /* SideProjecBluetoothUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideProjecBluetoothUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		843FF8E6281455A100B7C5AD /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		843FF8E9281456EB00B7C5AD /* BluetoothAppDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothAppDependencies.swift; sourceTree = "<group>"; };
+		843FF8ED28145FE800B7C5AD /* DeviceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 		843FF8E52814558A00B7C5AD /* HomeView */ = {
 			isa = PBXGroup;
 			children = (
+				843FF8EC28145FD600B7C5AD /* Views */,
 				843FF8B62814541A00B7C5AD /* HomeViewController.swift */,
 				843FF8E6281455A100B7C5AD /* HomeViewModel.swift */,
 			);
@@ -155,6 +158,14 @@
 				843FF8E52814558A00B7C5AD /* HomeView */,
 			);
 			path = Scenes;
+			sourceTree = "<group>";
+		};
+		843FF8EC28145FD600B7C5AD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				843FF8ED28145FE800B7C5AD /* DeviceCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,6 +301,7 @@
 				843FF8BD2814541A00B7C5AD /* SideProjecBluetooth.xcdatamodeld in Sources */,
 				843FF8EA281456EB00B7C5AD /* BluetoothAppDependencies.swift in Sources */,
 				843FF8B72814541A00B7C5AD /* HomeViewController.swift in Sources */,
+				843FF8EE28145FE800B7C5AD /* DeviceCell.swift in Sources */,
 				843FF8B32814541A00B7C5AD /* AppDelegate.swift in Sources */,
 				843FF8E7281455A100B7C5AD /* HomeViewModel.swift in Sources */,
 				843FF8B52814541A00B7C5AD /* SceneDelegate.swift in Sources */,

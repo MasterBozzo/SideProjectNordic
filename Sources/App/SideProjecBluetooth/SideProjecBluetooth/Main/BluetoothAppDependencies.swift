@@ -32,6 +32,7 @@ class BluetoothAppDependencies {
     func makeHomeViewController() -> UIViewController {
         let viewModel = HomeViewModel()
         let vc = HomeViewController(viewModel: viewModel)
+        vc.title = viewModel.title
         let navigationController = UINavigationController(rootViewController: vc)
         return navigationController
     }
