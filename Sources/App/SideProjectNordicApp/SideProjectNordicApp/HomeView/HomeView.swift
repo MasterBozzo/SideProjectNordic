@@ -9,9 +9,15 @@ import Foundation
 import SwiftUI
 
 struct HomeView: View {
+    
+    let viewModel: HomeViewModel
+    
     var body: some View {
-        HStack() {
-            Text("Hello World!")
+        NavigationView {
+            HStack() {
+                Text("Hello World!")
+            }
+            .navigationBarTitle(Text(viewModel.title))
         }
     }
 }

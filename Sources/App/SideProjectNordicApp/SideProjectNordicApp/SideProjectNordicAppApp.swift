@@ -18,9 +18,11 @@ struct SideProjectNordicAppApp: App {
 //        }
 //    }
     
+    let viewModel = HomeViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            HomeView()
+            HomeView(viewModel: viewModel)
         }
     }
 }
