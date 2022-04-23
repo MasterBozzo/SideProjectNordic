@@ -1,0 +1,611 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84470DC0281419F300D6E2F7 /* SideProjectNordicAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84470DBF281419F300D6E2F7 /* SideProjectNordicAppApp.swift */; };
+		84470DC2281419F300D6E2F7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84470DC1281419F300D6E2F7 /* ContentView.swift */; };
+		84470DC4281419F400D6E2F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84470DC3281419F400D6E2F7 /* Assets.xcassets */; };
+		84470DC7281419F400D6E2F7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84470DC6281419F400D6E2F7 /* Preview Assets.xcassets */; };
+		84470DC9281419F400D6E2F7 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84470DC8281419F400D6E2F7 /* Persistence.swift */; };
+		84470DCC281419F400D6E2F7 /* SideProjectNordicApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84470DCA281419F400D6E2F7 /* SideProjectNordicApp.xcdatamodeld */; };
+		84470DD6281419F500D6E2F7 /* SideProjectNordicAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84470DD5281419F500D6E2F7 /* SideProjectNordicAppTests.swift */; };
+		84470DE0281419F500D6E2F7 /* SideProjectNordicAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84470DDF281419F500D6E2F7 /* SideProjectNordicAppUITests.swift */; };
+		84470DE2281419F500D6E2F7 /* SideProjectNordicAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84470DE1281419F500D6E2F7 /* SideProjectNordicAppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84470DD2281419F500D6E2F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84470DB4281419F200D6E2F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84470DBB281419F300D6E2F7;
+			remoteInfo = SideProjectNordicApp;
+		};
+		84470DDC281419F500D6E2F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84470DB4281419F200D6E2F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84470DBB281419F300D6E2F7;
+			remoteInfo = SideProjectNordicApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		84470DBC281419F300D6E2F7 /* SideProjectNordicApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SideProjectNordicApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84470DBF281419F300D6E2F7 /* SideProjectNordicAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideProjectNordicAppApp.swift; sourceTree = "<group>"; };
+		84470DC1281419F300D6E2F7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		84470DC3281419F400D6E2F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84470DC6281419F400D6E2F7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		84470DC8281419F400D6E2F7 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		84470DCB281419F400D6E2F7 /* SideProjectNordicApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SideProjectNordicApp.xcdatamodel; sourceTree = "<group>"; };
+		84470DD1281419F500D6E2F7 /* SideProjectNordicAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SideProjectNordicAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84470DD5281419F500D6E2F7 /* SideProjectNordicAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideProjectNordicAppTests.swift; sourceTree = "<group>"; };
+		84470DDB281419F500D6E2F7 /* SideProjectNordicAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SideProjectNordicAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84470DDF281419F500D6E2F7 /* SideProjectNordicAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideProjectNordicAppUITests.swift; sourceTree = "<group>"; };
+		84470DE1281419F500D6E2F7 /* SideProjectNordicAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideProjectNordicAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84470DB9281419F300D6E2F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84470DCE281419F500D6E2F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84470DD8281419F500D6E2F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84470DB3281419F200D6E2F7 = {
+			isa = PBXGroup;
+			children = (
+				84470DBE281419F300D6E2F7 /* SideProjectNordicApp */,
+				84470DD4281419F500D6E2F7 /* SideProjectNordicAppTests */,
+				84470DDE281419F500D6E2F7 /* SideProjectNordicAppUITests */,
+				84470DBD281419F300D6E2F7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84470DBD281419F300D6E2F7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84470DBC281419F300D6E2F7 /* SideProjectNordicApp.app */,
+				84470DD1281419F500D6E2F7 /* SideProjectNordicAppTests.xctest */,
+				84470DDB281419F500D6E2F7 /* SideProjectNordicAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84470DBE281419F300D6E2F7 /* SideProjectNordicApp */ = {
+			isa = PBXGroup;
+			children = (
+				84470DBF281419F300D6E2F7 /* SideProjectNordicAppApp.swift */,
+				84470DC1281419F300D6E2F7 /* ContentView.swift */,
+				84470DC3281419F400D6E2F7 /* Assets.xcassets */,
+				84470DC8281419F400D6E2F7 /* Persistence.swift */,
+				84470DCA281419F400D6E2F7 /* SideProjectNordicApp.xcdatamodeld */,
+				84470DC5281419F400D6E2F7 /* Preview Content */,
+			);
+			path = SideProjectNordicApp;
+			sourceTree = "<group>";
+		};
+		84470DC5281419F400D6E2F7 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				84470DC6281419F400D6E2F7 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		84470DD4281419F500D6E2F7 /* SideProjectNordicAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				84470DD5281419F500D6E2F7 /* SideProjectNordicAppTests.swift */,
+			);
+			path = SideProjectNordicAppTests;
+			sourceTree = "<group>";
+		};
+		84470DDE281419F500D6E2F7 /* SideProjectNordicAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				84470DDF281419F500D6E2F7 /* SideProjectNordicAppUITests.swift */,
+				84470DE1281419F500D6E2F7 /* SideProjectNordicAppUITestsLaunchTests.swift */,
+			);
+			path = SideProjectNordicAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84470DBB281419F300D6E2F7 /* SideProjectNordicApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84470DE5281419F500D6E2F7 /* Build configuration list for PBXNativeTarget "SideProjectNordicApp" */;
+			buildPhases = (
+				84470DB8281419F300D6E2F7 /* Sources */,
+				84470DB9281419F300D6E2F7 /* Frameworks */,
+				84470DBA281419F300D6E2F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SideProjectNordicApp;
+			productName = SideProjectNordicApp;
+			productReference = 84470DBC281419F300D6E2F7 /* SideProjectNordicApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84470DD0281419F500D6E2F7 /* SideProjectNordicAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84470DE8281419F500D6E2F7 /* Build configuration list for PBXNativeTarget "SideProjectNordicAppTests" */;
+			buildPhases = (
+				84470DCD281419F500D6E2F7 /* Sources */,
+				84470DCE281419F500D6E2F7 /* Frameworks */,
+				84470DCF281419F500D6E2F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84470DD3281419F500D6E2F7 /* PBXTargetDependency */,
+			);
+			name = SideProjectNordicAppTests;
+			productName = SideProjectNordicAppTests;
+			productReference = 84470DD1281419F500D6E2F7 /* SideProjectNordicAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		84470DDA281419F500D6E2F7 /* SideProjectNordicAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84470DEB281419F500D6E2F7 /* Build configuration list for PBXNativeTarget "SideProjectNordicAppUITests" */;
+			buildPhases = (
+				84470DD7281419F500D6E2F7 /* Sources */,
+				84470DD8281419F500D6E2F7 /* Frameworks */,
+				84470DD9281419F500D6E2F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84470DDD281419F500D6E2F7 /* PBXTargetDependency */,
+			);
+			name = SideProjectNordicAppUITests;
+			productName = SideProjectNordicAppUITests;
+			productReference = 84470DDB281419F500D6E2F7 /* SideProjectNordicAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84470DB4281419F200D6E2F7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					84470DBB281419F300D6E2F7 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					84470DD0281419F500D6E2F7 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 84470DBB281419F300D6E2F7;
+					};
+					84470DDA281419F500D6E2F7 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 84470DBB281419F300D6E2F7;
+					};
+				};
+			};
+			buildConfigurationList = 84470DB7281419F200D6E2F7 /* Build configuration list for PBXProject "SideProjectNordicApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84470DB3281419F200D6E2F7;
+			productRefGroup = 84470DBD281419F300D6E2F7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84470DBB281419F300D6E2F7 /* SideProjectNordicApp */,
+				84470DD0281419F500D6E2F7 /* SideProjectNordicAppTests */,
+				84470DDA281419F500D6E2F7 /* SideProjectNordicAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84470DBA281419F300D6E2F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84470DC7281419F400D6E2F7 /* Preview Assets.xcassets in Resources */,
+				84470DC4281419F400D6E2F7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84470DCF281419F500D6E2F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84470DD9281419F500D6E2F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84470DB8281419F300D6E2F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84470DC9281419F400D6E2F7 /* Persistence.swift in Sources */,
+				84470DC2281419F300D6E2F7 /* ContentView.swift in Sources */,
+				84470DC0281419F300D6E2F7 /* SideProjectNordicAppApp.swift in Sources */,
+				84470DCC281419F400D6E2F7 /* SideProjectNordicApp.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84470DCD281419F500D6E2F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84470DD6281419F500D6E2F7 /* SideProjectNordicAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84470DD7281419F500D6E2F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84470DE2281419F500D6E2F7 /* SideProjectNordicAppUITestsLaunchTests.swift in Sources */,
+				84470DE0281419F500D6E2F7 /* SideProjectNordicAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84470DD3281419F500D6E2F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84470DBB281419F300D6E2F7 /* SideProjectNordicApp */;
+			targetProxy = 84470DD2281419F500D6E2F7 /* PBXContainerItemProxy */;
+		};
+		84470DDD281419F500D6E2F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84470DBB281419F300D6E2F7 /* SideProjectNordicApp */;
+			targetProxy = 84470DDC281419F500D6E2F7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		84470DE3281419F500D6E2F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		84470DE4281419F500D6E2F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84470DE6281419F500D6E2F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SideProjectNordicApp/Preview Content\"";
+				DEVELOPMENT_TEAM = M34WXV6QV2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kacela.SideProjectNordicApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84470DE7281419F500D6E2F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SideProjectNordicApp/Preview Content\"";
+				DEVELOPMENT_TEAM = M34WXV6QV2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kacela.SideProjectNordicApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		84470DE9281419F500D6E2F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M34WXV6QV2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kacela.SideProjectNordicAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SideProjectNordicApp.app/SideProjectNordicApp";
+			};
+			name = Debug;
+		};
+		84470DEA281419F500D6E2F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M34WXV6QV2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kacela.SideProjectNordicAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SideProjectNordicApp.app/SideProjectNordicApp";
+			};
+			name = Release;
+		};
+		84470DEC281419F500D6E2F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M34WXV6QV2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kacela.SideProjectNordicAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SideProjectNordicApp;
+			};
+			name = Debug;
+		};
+		84470DED281419F500D6E2F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M34WXV6QV2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kacela.SideProjectNordicAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SideProjectNordicApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84470DB7281419F200D6E2F7 /* Build configuration list for PBXProject "SideProjectNordicApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84470DE3281419F500D6E2F7 /* Debug */,
+				84470DE4281419F500D6E2F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84470DE5281419F500D6E2F7 /* Build configuration list for PBXNativeTarget "SideProjectNordicApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84470DE6281419F500D6E2F7 /* Debug */,
+				84470DE7281419F500D6E2F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84470DE8281419F500D6E2F7 /* Build configuration list for PBXNativeTarget "SideProjectNordicAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84470DE9281419F500D6E2F7 /* Debug */,
+				84470DEA281419F500D6E2F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84470DEB281419F500D6E2F7 /* Build configuration list for PBXNativeTarget "SideProjectNordicAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84470DEC281419F500D6E2F7 /* Debug */,
+				84470DED281419F500D6E2F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		84470DCA281419F400D6E2F7 /* SideProjectNordicApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				84470DCB281419F400D6E2F7 /* SideProjectNordicApp.xcdatamodel */,
+			);
+			currentVersion = 84470DCB281419F400D6E2F7 /* SideProjectNordicApp.xcdatamodel */;
+			path = SideProjectNordicApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 84470DB4281419F200D6E2F7 /* Project object */;
+}
