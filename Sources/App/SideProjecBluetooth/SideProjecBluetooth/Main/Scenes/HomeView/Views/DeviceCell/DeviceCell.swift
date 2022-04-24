@@ -19,6 +19,10 @@ class DeviceCell: UICollectionViewCell {
         setupHierarchy()
         setupLayout()
     }
+    
+    func update(with device: DeviceCellViewModel) {
+        nameLabel.text = device.name
+    }
         
     private func setupViews() {
         
@@ -32,7 +36,7 @@ class DeviceCell: UICollectionViewCell {
         nameLabel.frame = frame
     }
     
-    let nameLabel: UILabel = {
+   private let nameLabel: UILabel = {
         let label = UILabel()
         label.text = "Example device name"
         label.translatesAutoresizingMaskIntoConstraints = false

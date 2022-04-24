@@ -6,7 +6,17 @@
 //
 
 import Foundation
+import CoreBluetooth
 
 class HomeViewModel {
+    
     let title = "Scanner"
+    var discoveredPeripherals = [BlinkyPeripheral]()
+    
+    
+    func viewDidLoad() {
+        
+    }
+    
+    
 }

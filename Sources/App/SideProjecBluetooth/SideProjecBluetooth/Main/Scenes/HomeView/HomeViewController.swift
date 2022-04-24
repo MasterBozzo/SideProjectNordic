@@ -6,11 +6,13 @@
 //
 
 import UIKit
+import CoreBluetooth
 
 class HomeViewController: UIViewController {
     
     let viewModel: HomeViewModel
     let collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
+    var centralManager: CBCentralManager!
     
     init(viewModel: HomeViewModel) {
         self.viewModel = viewModel
@@ -23,10 +25,14 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        viewModel.viewDidLoad()
         setupViews()
         setupHierarchy()
         setupLayout()
         registerCells()
+        
+        centralManager = CBCentralManager()
+        centralManager.delegate = self
     }
     
     private func setupViews() {
@@ -68,8 +74,12 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
 //MARK:  Data source delgate
 extension HomeViewController: UICollectionViewDataSource {
     
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return viewModel.discoveredPeripherals.count == 1 ? 1 : 0
+    }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 1
+        return viewModel.discoveredPeripherals.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -77,4 +87,45 @@ extension HomeViewController: UICollectionViewDataSource {
         return cell
     }
     
+}
+
+
+// MARK: - CBCentralManagerDelegate
+
+extension HomeViewController: CBCentralManagerDelegate {
+    
+    func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber) {
+        let newPeripheral = BlinkyPeripheral(withPeripheral: peripheral, advertisementData: advertisementData, andRSSI: RSSI, using: centralManager)
+        if !viewModel.discoveredPeripherals.contains(newPeripheral) {
+            viewModel.discoveredPeripherals.append(newPeripheral)
+            
+            if viewModel.discoveredPeripherals.count == 1 {
+                collectionView.performBatchUpdates {
+                    collectionView.insertSections(IndexSet(integer: 0))
+                }
+            }
+            
+            collectionView.performBatchUpdates {
+                collectionView.insertItems(at: [IndexPath(row: viewModel.discoveredPeripherals.count - 1, section: 0)])
+            }
+            
+        } else {
+            if let index = viewModel.discoveredPeripherals.firstIndex(of: newPeripheral) {
+                if let aCell = collectionView.cellForItem(at: [0, index]) as? DeviceCell {
+                    let device = DeviceCellViewModel(name: newPeripheral.advertisedName ?? "unknow")
+                    aCell.update(with: device)
+                }
+            }
+        }
+    }
+
+    func centralManagerDidUpdateState(_ central: CBCentralManager) {
+        if central.state != .poweredOn {
+            print("Central is not powered on")
+        } else {
+            Log.dev(message: "scan for device")
+            centralManager.scanForPeripherals(withServices: [BlinkyPeripheral.nordicBlinkyServiceUUID],
+                                              options: [CBCentralManagerScanOptionAllowDuplicatesKey : true])
+        }
+    }
 }
