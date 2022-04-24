@@ -74,10 +74,6 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
 //MARK:  Data source delgate
 extension HomeViewController: UICollectionViewDataSource {
     
-    func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return viewModel.discoveredPeripherals.count == 1 ? 1 : 0
-    }
-    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return viewModel.discoveredPeripherals.count
     }
@@ -98,17 +94,7 @@ extension HomeViewController: CBCentralManagerDelegate {
         let newPeripheral = BlinkyPeripheral(withPeripheral: peripheral, advertisementData: advertisementData, andRSSI: RSSI, using: centralManager)
         if !viewModel.discoveredPeripherals.contains(newPeripheral) {
             viewModel.discoveredPeripherals.append(newPeripheral)
-            
-            if viewModel.discoveredPeripherals.count == 1 {
-                collectionView.performBatchUpdates {
-                    collectionView.insertSections(IndexSet(integer: 0))
-                }
-            }
-            
-            collectionView.performBatchUpdates {
-                collectionView.insertItems(at: [IndexPath(row: viewModel.discoveredPeripherals.count - 1, section: 0)])
-            }
-            
+            collectionView.reloadData()
         } else {
             if let index = viewModel.discoveredPeripherals.firstIndex(of: newPeripheral) {
                 if let aCell = collectionView.cellForItem(at: [0, index]) as? DeviceCell {
